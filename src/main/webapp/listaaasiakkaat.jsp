@@ -5,38 +5,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <script src="scripts/main.js"></script>
-<title>Insert title here</title>
-<style>
-#customers {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: violet;
-  color: white;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>Asiakkaiden listaus</title>
 </head>
 <body>
 <table id="customers">
 	<thead>	
 		<tr>
+			<th colspan="5" class="oikealle"><a id="linkki" href="lisaaasiakas.jsp">Lisää uusi asiakas</a></th>
+		</tr>
+		<tr>
 			<th>Hakusana:</th>
-			<th colspan="2"><input type="text" id="hakusana"></th>
+			<th colspan="3"><input type="text" id="hakusana"></th>
 			<th><input type="button" value="HAE" id="hakunappi" onclick="haeAsiakkaat()"></th>
 		</tr>
 		<tr>
@@ -44,6 +24,7 @@
 			<th>Sukunimi</th>
 			<th>Puhelin</th>
 			<th>Sposti</th>
+			<th></th>
 		</tr>
 		
 	</thead>

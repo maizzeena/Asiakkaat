@@ -6,8 +6,8 @@ public class Asiakas {
 	public Asiakas() {
 		
 	}
-	public Asiakas(int id, String etunimi, String sukunimi, String puhelin, String sposti) {
-		this.asiakas_id = id;
+	public Asiakas(int asiakas_id, String etunimi, String sukunimi, String puhelin, String sposti) {
+		this.asiakas_id = asiakas_id;
 		this.etunimi = etunimi;
 		this.sukunimi = sukunimi;
 		this.puhelin = puhelin;
